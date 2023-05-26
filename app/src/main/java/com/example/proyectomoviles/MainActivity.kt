@@ -12,7 +12,6 @@ import com.google.android.material.navigation.NavigationBarView
 
 class MainActivity : AppCompatActivity() {
     lateinit var bottomNavigationView: BottomNavigationView
-
     lateinit var homeFragment : Home
     lateinit var agregarFragment: Agregar
     lateinit var citasFragment: Citas
@@ -47,16 +46,3 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-/*
-* bottomNavigationView.setOnItemSelectedListener(NavigationBarView.OnItemSelectedListener {
-            override fun onNavigationItemSelected(item: MenuItem): Boolean {
-            * switch(item.getItemId()){
-            *   case R.id.home:
-            *   supportFragmentManager.beginTransaction().replace(R.id.container,homeFrament).commit()
-            *   return true
-            * }
-                return false
-            }
-        })
-        *
-        * */
