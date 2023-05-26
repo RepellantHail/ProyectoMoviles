@@ -41,19 +41,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/phone"
-            android:layout_margin="3dp"
-            android:layout_gravity="center"
-            />
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/telefono_text_input"
             android:layout_width="0dp"
             android:layout_margin="3dp"
             android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/phone"
             app:endIconMode="clear_text"
             android:layout_weight="1"
             app:startIconContentDescription="Descipcion de Icon"
@@ -73,6 +66,7 @@
             android:layout_margin="3dp"
             android:layout_height="wrap_content"
             app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/office"
             android:layout_weight="1"
             app:startIconContentDescription="Descipcion de Icon"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -85,31 +79,26 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/correo_text_input"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/correo"
+            app:endIconMode="clear_text"
+            app:startIconContentDescription="Descipcion de Icon"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint=" Correo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/correo_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
     </LinearLayout>
-
-    <Spinner
-        android:id="@+id/spinner_especialidad"
-        android:layout_width="match_parent"
-        android:layout_margin="5dp"
-        android:autofillHints="name"
-        android:layout_height="wrap_content"/>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/correo_text_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/correo"
-        app:endIconMode="clear_text"
-        app:startIconContentDescription="Descipcion de Icon"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint=" Correo">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/correo_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cedula_text_input"
@@ -127,6 +116,13 @@
             android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner_especialidad"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:autofillHints="name"
+        android:layout_height="wrap_content"/>
 
     <TableLayout
         android:layout_margin="3dp"
@@ -160,7 +156,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Extrnajero"/>
+                        android:text="Extranjero"/>
 
                     <CheckBox
                         android:layout_width="match_parent"
@@ -168,6 +164,11 @@
                         android:layout_weight="1"
                         android:text="Experiencia"/>
 
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Seguro"/>
 
             </LinearLayout>
 
@@ -216,7 +217,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:layout_height="100dp"
-                android:src="@drawable/doctormario"
+                android:src="@drawable/doctor1"
                 />
 
         </TableRow>
