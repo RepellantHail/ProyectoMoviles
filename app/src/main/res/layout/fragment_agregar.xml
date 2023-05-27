@@ -143,7 +143,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="Aptitudes"/>
+                    android:drawableEnd="@drawable/list"
+                    android:text="Aptitudes "/>
 
                     <CheckBox
                         android:layout_width="match_parent"
@@ -183,7 +184,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="Estado"/>
+                    android:drawableEnd="@drawable/active"
+                    android:text="Estado "/>
                 <RadioButton
                     android:id="@+id/radio_button_1"
                     android:layout_width="match_parent"
@@ -228,11 +230,14 @@
             android:gravity="center">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="3dp"
+                android:drawableEnd="@drawable/guardar"
+                android:drawableTint="@color/white"
                 android:text="Guardar"/>
+
 
         </TableRow>
 

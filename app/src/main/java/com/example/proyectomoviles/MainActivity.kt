@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var citasFragment: Citas
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
+        this.supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
         homeFragment = Home()
