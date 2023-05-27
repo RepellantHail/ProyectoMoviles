@@ -9,8 +9,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-
-
 class Home : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var miAdapter: CustomAdapter
