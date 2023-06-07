@@ -1,29 +1,33 @@
 package com.example.proyectomoviles
 
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.util.SparseBooleanArray
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.compose.ui.layout.Layout
-import androidx.fragment.app.Fragment
+import android.widget.ToggleButton
 import androidx.recyclerview.widget.RecyclerView
+import com.example.proyectomoviles.R
+import com.google.android.material.card.MaterialCardView
 
-class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder?>() {
-    val titles = arrayOf("Codelia",
-    "Suscribete",
-    "Videos",
-    "Youtube")
 
-    val details = arrayOf("Muchos videos nuevos",
-        "Kotlin",
-        "Más Videos",
-        "Gran cantidad")
+class CustomAdapter: RecyclerView.Adapter<CustomAdapter.ViewHolder?>() {
 
-    val imagenes = intArrayOf(R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground)
+    private var showAllElements = true
+
+    val titles = arrayOf("Cirujano",
+        "Pediatra",
+        "Cardiologo",
+        "General")
+
+    val details = arrayOf("Marcos",
+        "Claudia",
+        "Ximena",
+        "Carlos")
+
+    val imagenes = intArrayOf(R.drawable.doctormario,
+        R.drawable.doctor1,
+        R.drawable.doctor2,
+        R.drawable.doctor3)
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
         val v:View = LayoutInflater.from(viewGroup.context).inflate(R.layout.card_layout, viewGroup,false)
@@ -31,6 +35,14 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder?>() {
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
+        val cardLayout = viewHolder.itemView.findViewById<MaterialCardView>(R.id.card_view )
+
+        if (showAllElements) {
+            cardLayout.visibility = View.VISIBLE
+        } else {
+            cardLayout.visibility = View.GONE
+        }
+
         viewHolder.itemTitle.text = titles[i]
         viewHolder.itemDetail.text = details[i]
         viewHolder.itemImage.setImageResource(imagenes[i])
@@ -50,6 +62,11 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder?>() {
             itemTitle = itemView.findViewById(R.id.item_title)
             itemDetail = itemView.findViewById(R.id.item_detalles)
         }
+    }
+
+    fun toggleAllElementsVisibility() {
+        showAllElements = !showAllElements
+        notifyDataSetChanged()
     }
 
 }

@@ -1,7 +1,9 @@
 package com.example.proyectomoviles
 
+import Citas
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import android.widget.AdapterView.OnItemSelectedListener
 import androidx.annotation.NonNull
@@ -19,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        this.supportActionBar?.hide()
+        //this.supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
         homeFragment = Home()
@@ -46,5 +48,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 }
 

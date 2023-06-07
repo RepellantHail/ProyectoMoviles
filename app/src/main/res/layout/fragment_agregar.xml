@@ -6,17 +6,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp"
+    android:id="@+id/linLayout"
     tools:context=".Home">
 
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
         android:layout_gravity="start"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:text="Agregar Médico"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:background="@color/white"
+        android:textStyle="bold"
         />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -29,7 +34,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Nombre">
 
-            <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nombre_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -168,30 +173,30 @@
                     android:drawableEnd="@drawable/list"
                     android:text="Aptitudes "/>
 
-                    <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:text="Estudiante"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Estudiante"/>
 
-                    <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Extranjero"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Extranjero"/>
 
-                    <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Experiencia"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Experiencia"/>
 
-                    <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Seguro"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Seguro"/>
 
             </LinearLayout>
 
@@ -247,8 +252,8 @@
         </TableRow>
 
         <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center">
 
             <Button
