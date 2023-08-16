@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "479086576273",
+    "firebase_url": "https://globalmovil-6d44c-default-rtdb.firebaseio.com",
+    "project_id": "globalmovil-6d44c",
+    "storage_bucket": "globalmovil-6d44c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479086576273:android:0531d4a260600e8c1f3530",
+        "android_client_info": {
+          "package_name": "com.example.proyectomoviles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479086576273-34vobrglr4fl4jjrtklf6cbv2e2d3g5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPYYwLUGA6-Bm4465JI8GM2udlEFVX7ME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479086576273-34vobrglr4fl4jjrtklf6cbv2e2d3g5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
