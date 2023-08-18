@@ -114,6 +114,7 @@ class Agregar : Fragment() {
             val id = UUID.randomUUID()
 
             val user = mapOf(
+                "id" to id.toString(),
                 "name" to nombre,
                 "specialty" to especialidad,
                 "picture" to profilePicture
